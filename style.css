@@ -1,0 +1,529 @@
+
+body
+{  
+    width: auto;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.My_Page
+{ 
+    display: block;
+    vertical-align: middle;
+    margin: 0 auto;
+    padding: 2%;
+    text-align: left;
+}
+.header__site-name
+{
+    font-family: "Oleo Script",sans-serif;
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    float: left;
+}
+.header__menu
+{
+    display: inline-block;
+    max-height: 10%;
+width: 60%;
+    color: dimgray;
+/*    white-space: nowrap;*/
+    float: right;
+    
+    margin-top: 0;
+}
+.menu__item
+{
+    display: inline-block;
+    padding: 2%;
+   
+}
+.menu__item:hover
+{
+    color: black;
+}
+.menu__item:hover .Sub_Menu
+{
+    position: absolute;
+    display: inline;
+    list-style: none;
+    margin-left: -2%;
+    margin-top: 1%;
+    padding: 1.5%;
+    padding-left: 1%;
+    background-color: white;
+    border:1px solid gray;
+    border-radius: 2px;
+    
+}
+.menu__item:hover .SubMenu_Item
+{
+    border-bottom: 1px solid gray;
+    padding: 1.5% 0;
+    color: dimgray;  
+    width: 105%;
+}
+.Sub_Menu
+{
+    display: none;
+}
+.SubMenu_Item:hover
+{
+background-color: lightgray;
+}
+.Sub_Menu .Explanation
+{
+    font-size: 60%;
+}
+.Triangle1
+{
+    position: absolute;
+    width: 0;
+height: 0;
+border-style: solid;
+border-width: 3px 5px 0 5px;
+    top: -.81%;
+    z-index: 1;
+border-color: white transparent transparent transparent;   
+}
+.Triangle2
+{
+    position: absolute;
+    width: 0;
+height: 0;
+    top:0;
+border-style: solid;
+border-width: 3px 5px 0 5px;
+border-color: gray transparent transparent transparent;   
+}
+.Explanation
+{
+padding: 0;
+margin: 0;
+color: grey;
+font-size: 70%;
+
+clear: both;
+}
+.Site_Picture,.Site_picture_Info
+{
+display: inline-block;
+}
+.Site_Picture
+{
+    display: inline-block;
+    width: 40%;
+    position: relative;
+    padding: 5%;
+    box-sizing: content-box;
+}
+.Picture_Name
+{
+    text-transform: capitalize;
+}
+.Picture_description
+{
+    text-align: right;
+    font-size: 70%;
+    padding: 0;
+}
+.Hr_Header
+{
+    font-weight: 100;
+    background-color: gainsboro;
+    border:0;
+    height: .08%;
+    opacity: .4;
+}
+.Site_picture_Info
+{
+   
+    float: right;
+    text-align: center;
+    width: 40%;
+    margin-right: 10%;
+    margin-top: 3%;
+    font-family:"Oxygen Mono"; 
+    font-size: 90%;
+    padding-bottom: 1%;
+	text-align: right;
+    
+}
+.Button_Watch
+{
+    display: block;
+    float: right;
+    color: white;
+    border-radius: 3px;
+    padding: 0 ;
+    text-align: left;
+    border-right: 0;
+    position: relative;
+    width: 55%; 
+}
+.sprite
+{
+     background-image: url(spritesheet.png);
+    background-repeat: no-repeat;
+    display: block;
+    position: absolute;
+}
+.sprite-next {
+    width: 10%;
+    height: 60%;
+    top: 20%;
+    z-index: 10;
+    right: 5%;
+    background-position: -5px -5px;
+}
+.Vertical_Line
+{
+/*
+position: absolute;
+width: 10px;
+height: 80%;
+color: fuchsia;
+top: 10%;
+right: 20%;
+*/
+ position: absolute;
+width: .8%;
+z-index: 2;
+height: 80%;
+background:linear-gradient(to top,rgb(260, 153, 17),rgb(247, 163, 5));
+top: 10%;
+right: 20%;
+}
+.Button
+{
+background:linear-gradient(to top,rgb(247, 163, 5),rgb(252, 181, 48));
+border-color: rgb(250, 169, 17);
+color: white;
+text-transform: uppercase;
+padding: 1%;
+}
+.Quality
+{
+    text-transform:uppercase;
+    color: darkgoldenrod;
+    font-size: 70%;
+    font-weight: 600;
+}
+hr
+{
+clear: both;    
+}
+.Spider
+{
+
+min-width:40%;
+max-width: 80%;
+display: inline-block;
+outline: 1.5px solid gray;
+border:2px solid white;
+}
+.Pager,.Pager:before,.Pager:after
+{
+    background-color: rgba(0,0,0,.6);  
+    font-family: "Oxygen Mono",sans-serif;
+    font-size:60%;
+}
+.Pager
+{
+    display: inline-block;
+    position: absolute;
+    width: 40%;
+    top: 60%;
+    left: 21%;
+    padding: 1.5%;   
+}
+.Pager:before
+{
+content: "\2329";
+color: rgba(255,255,255,.2);
+vertical-align: text-bottom;
+text-align: center;
+font-weight: bold;
+font-size: 250%;
+width: 15%;
+height: 94%;
+top: 0;
+left: -20%;
+padding-top: 2%;
+position: absolute;
+}
+.Pager:after
+{
+content: "\232A";
+color: rgba(255,255,255,.2);
+text-align: center;
+font-weight: bold;
+font-size: 250%;
+ width: 15%;
+height: 94%;
+top:0;
+    padding-top: 2%;
+right: -20%;
+position: absolute;   
+}
+.Price
+{
+display: inline-block;
+margin-top: 3%;
+color: rgb(247, 163, 5); 
+
+}
+.Location
+{
+    color: gray;
+}
+.Top
+{
+padding: 0;
+margin: 0;
+color: white;
+}
+.Button_Header
+{
+    margin: 0;
+    white-space: nowrap;
+    padding: 3%;
+    border-radius: 3px;
+}
+.Section_header
+{
+font-size: 90%;
+margin-left: 2%;
+}
+.Gallery_Item
+{
+display: inline-block;
+vertical-align: top;
+width: 30%;
+position: relative;
+margin-left: 2%;
+background-image:linear-gradient(to bottom right,transparent 50.5%,blue 50.5%),
+linear-gradient(to bottom left, transparent 50.5%, blue 50.5%); 
+background-repeat: repeat-x, repeat-x;
+background-position: 0 10px, 0 10px;
+background-size: 10px 10px, 10px 10px;
+border-bottom: 10px solid transparent;
+background-image:
+        linear-gradient(lightgray,gainsboro ),
+        linear-gradient(to bottom right, transparent 50.5%, gainsboro 50.5%),
+        linear-gradient(to bottom left, transparent 50.5%, gainsboro 50.5%),
+        linear-gradient(to top right, transparent 50.5%, gainsboro 50.5%),
+        linear-gradient(to top left, transparent 50.5%, gainsboro 50.5%);
+background-repeat: repeat, repeat-x, repeat-x, repeat-x, repeat-x;
+background-position: 0 0, 10px 0, 10px 0, 10px 100%, 10px 100%;
+background-size: auto auto, 10px 10px, 10px 10px, 10px 10px, 10px 10px;
+background-clip: padding-box, border-box, border-box, border-box, border-box;
+background-origin: padding-box, border-box, border-box, border-box, border-box;
+border-top: 1px solid gainsboro;
+border-right: .5px solid gainsboro;
+border-left: 1px solid gainsboro;
+}
+.Gallery_Item:nth-child(2)
+{
+
+}
+.Gallery_Image 
+{
+    position: relative;
+    width: 99%;
+    height: 30%;
+    border: 1px solid white;
+    border-radius: 1px;
+}
+.Gallery_Item_Name
+{
+font-size: 70%;
+text-transform: capitalize;
+margin-left: 2%;
+padding-top: 2%;
+color: dimgray;
+}
+.Gallery_Item_Name_Description
+{
+    font-size: 50%;
+    margin: 2%;
+    color: gray;
+}
+.Picture_Description
+{
+    width: 30%;
+    display: inline-block;
+    margin-left: 2%;
+    text-align: left;
+    vertical-align: top;
+    font-size: 80%;
+}
+.Picture_Description:nth-child(3)
+{
+    padding-top: 0;
+}
+.More_useful_Info
+{
+    border: 1px solid rgb(147,147,147);;
+    margin-bottom: 4%;
+    font-size: 70%;
+}
+.Highlighet_text
+{
+    background-color: rgba(255,206,67,.5);
+    color: rgb(245,179,0);
+}
+.Tab
+{
+    float: left;
+    border: 1px solid gray;
+    margin-left:0;
+    margin-right: 0;
+    width: 8%;
+    text-align: center;
+    padding: 1%;
+    border-top: 0;
+    border-right: 0;
+    background-color: rgb(246,246,246);
+    color: rgb(147,147,147);
+}
+.Tab:first-child
+{
+    border-left: 0;
+	border-bottom: 0;
+	background-color: white;
+}
+.Tab_Left_Space
+{
+    width: 67.65%;
+    height:3.6%;
+}
+.Useful_Info_Sub_Title
+{
+    clear: both;
+    padding-top: 2%;
+	margin-left: 4%;
+}
+/*
+.More_Info_Menu,.More_Info_Pic
+{
+	display: inline-block;
+	vertical-align: top;
+	width:30%;
+	margin-top: 2%;
+}
+.More_Info_Menu
+{
+	margin: 0;
+	margin-top: 2%;
+	margin-bottom: 2%;
+	list-style: none;
+	margin-left: 0;
+	text-align: left;
+	padding-left: 4%;
+}
+.More_Info_Pic
+{
+	width:30%;
+	
+}
+.More_Info_Menu_Items
+{
+	padding: 1%;
+	margin: 0;
+	text-align: left;
+}
+.More_Info_Menu_Items:before
+{
+	content: "\203A";
+	margin-right: 3%;
+	font-weight:bolder;
+	font-size: 120%;
+	color: rgb(147,147,147);
+}
+.More_Useful_Info_Pic
+{
+	float: left;
+	width: 40%;
+	outline: 1px solid rgb(147,147,147);	
+	border-radius: 1px;
+	border: 1px solid white;
+	border-left: 0;
+}
+*/
+/*
+.More_Info_Pic p
+{
+	margin-left:43%;
+	font-size: 90%;
+	margin-top: 0;
+	color: rgb(147,147,147);
+}
+.More_Useful_Info_Pic_heading
+{
+	margin-top: -1%;
+	margin-left: 43%;
+	margin-bottom: 0;
+}
+
+.About_Section
+{
+	width: 25%;
+	display: inline-block;
+	vertical-align: top;
+	margin-right: 2%;
+	list-style: none;
+}
+.About_Section_title
+{
+	color:rgb(247, 163, 5);
+	text-transform:uppercase;
+	font-size: 80%;
+	margin-left: 0;
+}
+.About_List
+{
+	margin: 0;
+	list-style: none;
+	padding: 0;
+	display: block;
+}
+.About_List_item
+{
+margin: 0;
+display: block;
+padding-top: 4%;
+padding-bottom: 4%;
+font-size: 80%;
+color: gray;
+border-bottom: 1px solid gainsboro;
+}
+.About_Section:nth-child(3)
+{
+	width: 44.8%;
+	margin-right: 0;
+	padding-top: 0;
+}
+.About_List_item_discription
+{
+	font-size: 80%;
+	margin-left: 9%;
+	color:darkgray;
+}
+.About_Section:nth-child(3) .About_List_item
+{
+	
+	padding-top: 5%;
+}
+.About_Section:nth-child(3) .About_List_item:before
+{
+	display: inline-block;
+	content:url('maket.jpg');
+	margin-right: 3%;	
+	vertical-align:middle;
+}
+.UN
+{
+	width:92%;
+}*/
